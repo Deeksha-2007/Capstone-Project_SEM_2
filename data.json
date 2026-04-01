@@ -1,0 +1,38 @@
+{
+  "pizza": {
+    "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
+    "options": [
+      { "name": "Thin Crust", "price": 150 },
+      { "name": "Cheese Burst", "price": 200 },
+      { "name": "Farmhouse", "price": 230 },
+      { "name": "Paneer Supreme", "price": 250 }
+    ]
+  },
+  "pasta": {
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800",
+    "options": [
+      { "name": "White Sauce", "price": 120 },
+      { "name": "Red Sauce", "price": 110 },
+      { "name": "Alfredo", "price": 140 },
+      { "name": "Arrabiata", "price": 130 }
+    ]
+  },
+  "burger": {
+    "image": "https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg",
+    "options": [
+      { "name": "Veg Burger", "price": 90 },
+      { "name": "Chicken Burger", "price": 120 },
+      { "name": "Cheese Burger", "price": 110 },
+      { "name": "Double Patty", "price": 150 }
+    ]
+  },
+  "drink": {
+    "image": "https://cdn.pixabay.com/photo/2017/01/20/15/06/orange-juice-1995056_1280.jpg",
+    "options": [
+      { "name": "Cold Coffee", "price": 80 },
+      { "name": "Mojito", "price": 70 },
+      { "name": "Shake", "price": 100 },
+      { "name": "Iced Tea", "price": 90 }
+    ]
+  }
+}

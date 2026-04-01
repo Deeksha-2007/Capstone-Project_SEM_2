@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  min-height: 100vh;
+}
+.navbar {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.catCard {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.catCard img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.catCard p {
+  padding: 10px;
+  font-weight: 600;
+  color: #444;
+}
+.catCard:hover {
+  transform: translateY(-6px);
+}
+#builder {
+  display: none;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.options button {
+  padding: 10px;
+  border-radius: 10px;
+  background: #f1f3f5;
+  border: none;
+  transition: 0.3s;
+}
+.options button:hover {
+  background: #dee2ff;
+}
+.card {
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.cartBtn {
+  background: #ffcad4;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.backInside {
+  margin-top: 8px;
+  background: #e9ecef;
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+}
