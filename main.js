@@ -1,4 +1,3 @@
-console.log("MAIN JS LOADED");
 import { app } from './javascript /setup.js';
 import './javascript /utils.js';
 import './javascript /core.js';

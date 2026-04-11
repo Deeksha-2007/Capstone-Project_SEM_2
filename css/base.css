@@ -5,12 +5,9 @@
     font-family: 'Outfit', sans-serif;
 }
 
-/* =========================================
-   2. TYPOGRAPHY & GLOBAL STYLES
-   ========================================= */
 body {
     background-color: var(--bg-main);
-    /* Modern, Centered, Deep glowing radial gradient */
+    
     background-image: radial-gradient(circle at center,
             rgba(255, 87, 34, 0.20) 0%,
             rgba(255, 60, 20, 0.10) 25%,
