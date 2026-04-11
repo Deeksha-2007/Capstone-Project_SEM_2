@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* =========================================
+   2. TYPOGRAPHY & GLOBAL STYLES
+   ========================================= */
+body {
+    background-color: var(--bg-main);
+    /* Modern, Centered, Deep glowing radial gradient */
+    background-image: radial-gradient(circle at center,
+            rgba(255, 87, 34, 0.20) 0%,
+            rgba(255, 60, 20, 0.10) 25%,
+            rgba(9, 9, 11, 0.95) 60%,
+            #09090b 100%);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: var(--text-main);
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-image: radial-gradient(circle at center,
+            rgba(255, 120, 60, 0.15) 0%,
+            rgba(255, 120, 60, 0.05) 30%,
+            rgba(248, 250, 252, 0.9) 60%,
+            #f8fafc 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

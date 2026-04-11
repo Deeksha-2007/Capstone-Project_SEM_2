@@ -1,0 +1,80 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 4rem 40px 0;
+    }
+
+    .navbar {
+        padding: 1rem 40px;
+    }
+
+    .burger {
+        width: 280px;
+        left: -2%;
+    }
+
+    .pizza-slice {
+        width: 240px;
+        right: -2%;
+    }
+
+    .momos {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 4rem 20px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 20px;
+        gap: 1rem;
+    }
+
+    .nav-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hero-section {
+        min-height: 80vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+
+    .burger {
+        width: 180px;
+        opacity: 0.3;
+        left: -10px;
+        top: 10%;
+    }
+
+    .pizza-slice {
+        width: 160px;
+        right: -10px;
+        bottom: 5%;
+        opacity: 0.3;
+    }
+
+    .momos {
+        width: 140px;
+        top: 5%;
+        opacity: 0.3;
+    }
+
+    .tomato-1,
+    .tomato-2 {
+        display: none;
+    }
+
+    .cart-drawer {
+        width: 85%;
+    }
+}

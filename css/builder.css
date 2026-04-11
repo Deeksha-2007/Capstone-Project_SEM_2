@@ -1,0 +1,117 @@
+.builder-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.builder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.builder-header h2 {
+    font-size: 2rem;
+}
+
+.option-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.hidden-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.option-card {
+    background: var(--surface-main);
+    backdrop-filter: blur(15px);
+    border: 2px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--glass-hover);
+}
+
+body.light-mode .option-card:hover {
+    border-color: #cbd5e1;
+}
+
+.option-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    transition: transform 0.3s;
+}
+
+.option-card:hover img {
+    transform: scale(1.05);
+}
+
+.option-card .opt-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.option-card .opt-price {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.check-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.option-card:has(.hidden-input:checked) {
+    border-color: var(--primary);
+    background: rgba(255, 87, 34, 0.08);
+    box-shadow: 0 10px 25px var(--primary-glow);
+}
+
+.option-card:has(.hidden-input:checked) .check-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.option-card:has(.hidden-input:checked) .opt-price {
+    color: var(--primary);
+    font-weight: bold;
+}

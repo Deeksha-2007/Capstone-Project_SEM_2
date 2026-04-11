@@ -1,0 +1,31 @@
+:root {
+    --bg-main: #09090b;
+    --surface-main: rgba(24, 24, 27, 0.7);
+    --text-main: #f8fafc;
+    --text-muted: #a1a1aa;
+
+    --primary: #ff5722;
+    --primary-hover: #f97316;
+    --primary-glow: rgba(255, 87, 34, 0.35);
+
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-hover: rgba(255, 255, 255, 0.06);
+
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 30px var(--primary-glow);
+}
+
+body.light-mode {
+    --bg-main: #f8fafc;
+    --surface-main: rgba(255, 255, 255, 0.85);
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: #e2e8f0;
+    --glass-hover: #f1f5f9;
+    --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+}

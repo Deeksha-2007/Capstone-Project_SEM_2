@@ -1,0 +1,113 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--glass-border);
+    margin-top: -80px;
+    padding-top: 80px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.hero-content p {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.hero-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.float-img {
+    position: absolute;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.6));
+}
+
+.burger {
+    width: 380px;
+    left: 2%;
+    top: 20%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.pizza-slice {
+    width: 320px;
+    right: 2%;
+    bottom: 10%;
+    animation: float-tilted 5.5s ease-in-out infinite 0.5s;
+}
+
+.momos {
+    width: 260px;
+    right: 10%;
+    top: 15%;
+    animation: float 7s ease-in-out infinite 1s alternate-reverse;
+}
+
+.tomato-1 {
+    width: 90px;
+    right: 30%;
+    top: 35%;
+    animation: float 4s ease-in-out infinite 0.2s;
+}
+
+.tomato-2 {
+    width: 110px;
+    left: 15%;
+    bottom: 15%;
+    animation: float 4.5s ease-in-out infinite 0.8s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes float-tilted {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-15deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(-13deg);
+    }
+}
