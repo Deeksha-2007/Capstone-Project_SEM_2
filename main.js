@@ -95,7 +95,15 @@ const app = {
 
         Object.keys(this.menuData.platters).forEach(platterKey => {
             const formattedName = platterKey.replace(/([A-Z])/g, ' $1').trim() + ' Platter';
-            plattersGrid.appendChild(this.createCard(formattedName, "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80", 'Curated Set', () => this.startPlatterBuilder(platterKey, formattedName)));
+
+            const image = this.menuData.platters[platterKey].image;
+
+            plattersGrid.appendChild(this.createCard(
+                formattedName,
+                image,
+                'Curated Set',
+                () => this.startPlatterBuilder(platterKey, formattedName)
+            ));
         });
 
         ['drink', 'dessert'].forEach(cat => {
